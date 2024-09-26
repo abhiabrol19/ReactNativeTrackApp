@@ -41,9 +41,9 @@ This project is a React Native application designed for tracking and saving user
 - **Track Management:** Saves user tracks with GPS coordinates to MongoDB.
 - **Error Handling:** Handles errors with appropriate messages and validations to enhance user experience.
 
-## Screenshots
+<!-- ## Screenshots
 
 <img src="./assets/1.jpeg" alt="App Screenshot 1" width="400" height="auto"/>
 <img src="./assets/2.jpeg" alt="App Screenshot 2" width="400" height="auto"/>
 <img src="./assets/3.jpeg" alt="App Screenshot 3" width="400" height="auto"/>
-<img src="./assets/4.jpeg" alt="App Screenshot 4" width="400" height="auto"/>
+<img src="./assets/4.jpeg" alt="App Screenshot 4" width="400" height="auto"/> -->
