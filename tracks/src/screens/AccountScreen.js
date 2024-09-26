@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Button } from '@rneui/themed';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Button, Input } from '@rneui/themed';
 import { Context as AuthContext } from '../context/AuthContext';
 
 const AccountScreen = () => {
@@ -9,7 +9,11 @@ const AccountScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Account Screen</Text>
-      <Button title="Sign Out" onPress={signout} style={styles.button} />
+      <Input placeholder="Change Password" secureTextEntry />
+      <Button title="Update Password" style={styles.button} />
+      <TouchableOpacity onPress={signout} style={styles.signOutButton}>
+        <Text>Sign Out</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -28,9 +32,13 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
+    marginBottom: 10,
     backgroundColor: '#ff6347',
-    color: '#fff',
+  },
+  signOutButton: {
+    marginTop: 20,
     padding: 10,
+    backgroundColor: '#d9534f',
     borderRadius: 5,
   },
 });

@@ -31,7 +31,6 @@ const Map = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Map</Text>
       <MapView
         ref={mapRef}
         style={styles.map}

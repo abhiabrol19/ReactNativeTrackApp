@@ -19,6 +19,8 @@ const getLocation = (increment) => {
 
 let counter = 0;
 setInterval(() => {
+  //const location = getLocation(counter);
+  //console.log('Mock location:', location);
   Location.EventEmitter.emit('Expo.locationChanged', {
     watchId: Location._getCurrentWatchId(),
     location: getLocation(counter),
